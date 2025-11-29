@@ -7,7 +7,8 @@ import {
   FileText,
   Camera,
   Lock,
-  Megaphone
+  Megaphone,
+  Wrench
 } from 'lucide-react'
 
 export interface Tool {
@@ -91,6 +92,23 @@ export const tools: Tool[] = [
       'Direct WhatsApp sharing'
     ],
     techHighlight: 'Canvas API + Custom Fonts'
+  },
+  {
+    id: 'devtoy',
+    name: 'DevToy',
+    tagline: 'Developer Utilities Suite',
+    description: 'Swiss-Army-Knife developer utilities with smart paste detection. JSON formatter, JWT decoder, regex tester, base64 encoder, and Unix time converter.',
+    icon: Wrench,
+    url: 'https://devtoy.worksoffline.in',
+    color: '#06b6d4',
+    gradient: 'from-cyan-500 to-purple-600',
+    features: [
+      'Smart paste auto-detection',
+      'JSON formatter with tree view',
+      'JWT decoder & validator',
+      'Regex tester with live matching'
+    ],
+    techHighlight: 'WASM-Ready Architecture'
   }
 ]
 

@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 250, 250, 255;
+  --background-end-rgb: 240, 248, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 10, 15, 30;
+    --background-end-rgb: 20, 25, 45;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.7);
+}
+
+/* Animated Background Grid */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* WASM Animation Styles */
+.wasm-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(45deg, #0ea5e9, #d946ef);
+  border-radius: 50%;
+  animation: particleFloat 3s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* Binary code animation */
+.binary-rain {
+  font-family: 'Courier New', monospace;
+  color: rgba(14, 165, 233, 0.1);
+  animation: binaryFall 10s linear infinite;
+}
+
+@keyframes binaryFall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0ea5e9 0%, #d946ef 50%, #0ea5e9 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Tool card hover effect */
+.tool-card {
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.2);
+}
+
+/* Shield animation */
+.shield-pulse {
+  animation: shieldPulse 2s ease-in-out infinite;
+}
+
+@keyframes shieldPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.4));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.6));
+  }
+}
+
+/* Device animation */
+.device-glow {
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.3);
+  animation: deviceGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes deviceGlow {
+  0% {
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 50px rgba(14, 165, 233, 0.5);
+  }
+}
+
+/* Data flow animation */
+.data-flow {
+  stroke-dasharray: 10, 5;
+  animation: dashFlow 1s linear infinite;
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -15;
+  }
+}

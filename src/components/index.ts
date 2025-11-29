@@ -1,0 +1,6 @@
+export { Header } from './Header'
+export { Footer } from './Footer'
+export { HeroSection } from './HeroSection'
+export { ToolsGrid } from './ToolsGrid'
+export { WasmSection } from './WasmSection'
+export { TrustSection } from './TrustSection'

@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration'
+// TODO: Re-enable PWA features in the future
+// import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -45,7 +46,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body className={inter.className}>
-        <ServiceWorkerRegistration />
+        {/* TODO: Re-enable PWA features in the future */}
+        {/* <ServiceWorkerRegistration /> */}
         {children}
       </body>
     </html>

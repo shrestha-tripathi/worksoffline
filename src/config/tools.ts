@@ -8,7 +8,8 @@ import {
   Camera,
   Lock,
   Megaphone,
-  Wrench
+  Wrench,
+  Table2
 } from 'lucide-react'
 
 export interface Tool {
@@ -109,6 +110,23 @@ export const tools: Tool[] = [
       'Regex tester with live matching'
     ],
     techHighlight: 'WASM-Ready Architecture'
+  },
+  {
+    id: 'blitztable',
+    name: 'BlitzTable',
+    tagline: 'Offline Data Analytics',
+    description: 'Lightning-fast SQL queries, pivot tables, and charts for CSV/JSON data. Analyze Airtable exports and 100k+ rows instantly in your browser.',
+    icon: Table2,
+    url: 'https://blitztable.worksoffline.in',
+    color: '#8b5cf6',
+    gradient: 'from-violet-500 to-purple-600',
+    features: [
+      'SQL queries on CSV/JSON files',
+      'Drag-and-drop pivot tables',
+      'Beautiful charts (bar, line, pie)',
+      'Auto-fix Airtable exports'
+    ],
+    techHighlight: 'DuckDB-WASM + Perspective'
   }
 ]
 

@@ -136,8 +136,8 @@ export const tools: Tool[] = [
     description: 'All-in-one offline PDF editor. Merge, split, OCR, redact, sign, password protect, and convert PDFs - all processing happens locally in your browser.',
     icon: FileEdit,
     url: 'https://pdfhub.worksoffline.in',
-    color: '#1e3a5f',
-    gradient: 'from-slate-700 to-blue-900',
+    color: '#6366f1',
+    gradient: 'from-indigo-500 to-blue-600',
     features: [
       'Merge & split PDF files',
       'OCR text extraction',

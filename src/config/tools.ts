@@ -9,7 +9,8 @@ import {
   Lock,
   Megaphone,
   Wrench,
-  Table2
+  Table2,
+  FileEdit
 } from 'lucide-react'
 
 export interface Tool {
@@ -127,6 +128,23 @@ export const tools: Tool[] = [
       'Auto-fix Airtable exports'
     ],
     techHighlight: 'DuckDB-WASM + Perspective'
+  },
+  {
+    id: 'pdfhub',
+    name: 'PDFHub',
+    tagline: 'Complete PDF Toolkit',
+    description: 'All-in-one offline PDF editor. Merge, split, OCR, redact, sign, password protect, and convert PDFs - all processing happens locally in your browser.',
+    icon: FileEdit,
+    url: 'https://pdfhub.worksoffline.in',
+    color: '#1e3a5f',
+    gradient: 'from-slate-700 to-blue-900',
+    features: [
+      'Merge & split PDF files',
+      'OCR text extraction',
+      'Redact sensitive information',
+      'Digital signatures & passwords'
+    ],
+    techHighlight: 'PDF.js + pdf-lib + Tesseract.js'
   }
 ]
 

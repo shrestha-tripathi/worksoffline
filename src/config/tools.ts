@@ -10,7 +10,8 @@ import {
   Megaphone,
   Wrench,
   Table2,
-  FileEdit
+  FileEdit,
+  Feather
 } from 'lucide-react'
 
 export interface Tool {
@@ -145,6 +146,23 @@ export const tools: Tool[] = [
       'Digital signatures & passwords'
     ],
     techHighlight: 'PDF.js + pdf-lib + Tesseract.js'
+  },
+  {
+    id: 'pensive',
+    name: 'Pensive',
+    tagline: 'Local-first note-taking with on-device AI',
+    description: 'Take notes, transcribe voice with Whisper, and chat with your own knowledge base via on-device RAG. Nested pages, backlinks, and a quick switcher — all in your browser.',
+    icon: Feather,
+    url: 'https://shrestha-tripathi.github.io/pensive/',
+    color: '#8b5cf6',
+    gradient: 'from-violet-500 to-purple-700',
+    features: [
+      'Voice → text with Whisper (on-device)',
+      'RAG chat over your notes (WebGPU)',
+      'Nested pages, mentions & backlinks',
+      'IndexedDB storage · zero servers'
+    ],
+    techHighlight: 'Whisper + bge + Qwen2.5 + WebGPU'
   }
 ]
 

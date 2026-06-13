@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration'
 
@@ -44,6 +45,25 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        {/* Google Analytics 4 — only injected in production builds so localhost dev doesn't pollute the GA property */}
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-Q1Y0YHLJ8K"
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-Q1Y0YHLJ8K');
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body className={inter.className}>
         <ServiceWorkerRegistration />

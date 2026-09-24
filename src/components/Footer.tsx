@@ -55,13 +55,18 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Privacy</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#how-it-works" className="text-gray-400 hover:text-primary-400 transition-colors">
+                <a href="/#how-it-works" className="text-gray-400 hover:text-primary-400 transition-colors">
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#trust" className="text-gray-400 hover:text-primary-400 transition-colors">
+                <a href="/#trust" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Our Promise
+                </a>
+              </li>
+              <li>
+                <a href="/alternatives/" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  Offline Alternatives
                 </a>
               </li>
               <li>

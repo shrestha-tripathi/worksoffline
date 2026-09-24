@@ -26,13 +26,13 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <a href="#tools" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors">
+              <a href="/#tools" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors">
                 Tools
               </a>
-              <a href="#how-it-works" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors">
+              <a href="/#how-it-works" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors">
                 How It Works
               </a>
-              <a href="#trust" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors">
+              <a href="/#trust" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 transition-colors">
                 Privacy
               </a>
             </nav>
@@ -71,21 +71,21 @@ export function Header() {
           >
             <nav className="container mx-auto px-4 py-4 space-y-4">
               <a
-                href="#tools"
+                href="/#tools"
                 className="block text-gray-600 dark:text-gray-300 hover:text-primary-500"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Tools
               </a>
               <a
-                href="#how-it-works"
+                href="/#how-it-works"
                 className="block text-gray-600 dark:text-gray-300 hover:text-primary-500"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
               </a>
               <a
-                href="#trust"
+                href="/#trust"
                 className="block text-gray-600 dark:text-gray-300 hover:text-primary-500"
                 onClick={() => setIsMenuOpen(false)}
               >

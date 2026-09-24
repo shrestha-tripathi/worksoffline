@@ -13,6 +13,7 @@ Speed and maximum file size depend on your device's memory and browser. Some AI 
 
 ## Pages
 - [WorksOffline.in home](https://worksoffline.in/): Directory of all tools.
+- [Offline alternatives](https://worksoffline.in/alternatives/): Honest comparisons of our offline tools with popular online services.
 
 ## Tools
 - [PresetPhoto](https://presetphoto.worksoffline.in): Exam Photo Processor — Process photos and signatures for government exam applications. Crop, resize, and compress to exact specifications required by exam portals.
@@ -31,6 +32,18 @@ Speed and maximum file size depend on your device's memory and browser. Some AI 
 - [Screen Color Picker](https://screencolorpicker.com): Pick colors from your screen — Pick any color from anywhere on your screen — other apps, videos, PDFs, even another monitor. Built on the EyeDropper API.
 - [LiveCaptionIt](https://livecaptionit.com): Live captions for any tab — Live captions for any audio your browser can hear, in a floating picture-in-picture window. Whisper runs locally via WebGPU.
 - [SubtitleTranslatorFree](https://subtitletranslatorfree.com): Translate SRT/VTT subtitles — Translate SRT and VTT subtitle files into 20+ languages on your device — no upload, no signup.
+
+## Alternatives
+- [Offline alternative to iLovePDF](https://worksoffline.in/alternatives/ilovepdf/): Private, in-browser alternative to iLovePDF, with a fair comparison.
+- [Offline alternative to Smallpdf](https://worksoffline.in/alternatives/smallpdf/): Private, in-browser alternative to Smallpdf, with a fair comparison.
+- [Offline alternative to Remove.bg](https://worksoffline.in/alternatives/remove-bg/): Private, in-browser alternative to Remove.bg, with a fair comparison.
+- [Offline alternative to CloudConvert](https://worksoffline.in/alternatives/cloudconvert/): Private, in-browser alternative to CloudConvert, with a fair comparison.
+- [Offline alternative to FreeConvert](https://worksoffline.in/alternatives/freeconvert/): Private, in-browser alternative to FreeConvert, with a fair comparison.
+- [Offline alternative to VEED subtitles](https://worksoffline.in/alternatives/veed-subtitles/): Private, in-browser alternative to VEED subtitles, with a fair comparison.
+- [Offline alternative to Otter.ai live captions](https://worksoffline.in/alternatives/otter-ai-live-captions/): Private, in-browser alternative to Otter.ai live captions, with a fair comparison.
+- [Offline alternative to ColorZilla](https://worksoffline.in/alternatives/colorzilla/): Private, in-browser alternative to ColorZilla, with a fair comparison.
+- [Offline alternative to Cleanup.pictures](https://worksoffline.in/alternatives/cleanup-pictures/): Private, in-browser alternative to Cleanup.pictures, with a fair comparison.
+- [Offline alternative to HEICtoJPG.com](https://worksoffline.in/alternatives/heictojpg/): Private, in-browser alternative to HEICtoJPG.com, with a fair comparison.
 
 ## FAQ
 Q: Are the tools free?

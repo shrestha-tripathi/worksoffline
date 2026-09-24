@@ -4,9 +4,10 @@ Scope for each repo: Phase A (GEO) → Phase B (WebMCP) → Phase C (programmati
 Full spec: ~/projects/worksoffline/specs/2026-09-traffic-push-geo-pseo-webmcp.md
 
 ## Rules
+- HARD TIME LIMIT ~9 minutes per run. Work fast: no exploratory reading beyond what's needed. PUSH IMMEDIATELY after each phase merge so nothing gets lost. If you're running out of time, commit WIP on the feature branch and push the branch.
 - One branch + one commit per phase per repo: `feat/geo`, `feat/webmcp`, `feat/pseo`. Merge `--no-ff` to main, push main + branch.
 - WSL git pitfall: use `timeout 40 git branch -f feat/x main` then `timeout 40 git switch feat/x`; never `git checkout`. One git op per terminal call. Re-verify with `git log --oneline -1 main` after merges.
-- Push: `TOKEN=$(grep "^GITHUB_TOKEN=" ~/.hermes/.env | head -1 | cut -d= -f2- | tr -d '\n\r"')`; `git remote set-url origin "https://shrestha-tripathi:${TOKEN}@github.com/shrestha-tripathi/<repo>.git"`; push; then IMMEDIATELY reset the URL to the tokenless form. Never print the token.
+- Push: `TOKEN=$(timeout 60 "/mnt/c/Program Files/GitHub CLI/gh.exe" auth token 2>/dev/null | tr -d '\r\n')` (the .env token is stale, don't use it); `git remote set-url origin "https://shrestha-tripathi:${TOKEN}@github.com/shrestha-tripathi/<repo>.git"`; push; then IMMEDIATELY reset the URL to the tokenless form. Never print the token.
 - Before every commit: `npm run build` must be green (plus `npm test` / `npx astro check` if present). Don't commit a broken build.
 - Brand/domain strings come from `src/site.config.ts` (or the repo equivalent). Don't hardcode them.
 - Keep both themes working. Muted text min `text-sm`, no opacity on muted text.

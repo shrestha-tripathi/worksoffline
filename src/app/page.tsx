@@ -1,5 +1,6 @@
 import { Header, Footer, HeroSection, ToolsGrid, WasmSection, TrustSection } from '@/components'
 import { TldrSection } from '@/components/TldrSection'
+import { WebMcpRegistration } from '@/components/WebMcpRegistration'
 import { tools } from '@/config/tools'
 import { site } from '@/config/site'
 
@@ -43,6 +44,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }} />
       <HeroSection />
       <TldrSection />
+      <WebMcpRegistration />
       
       {/* Tools Grid */}
       <ToolsGrid />

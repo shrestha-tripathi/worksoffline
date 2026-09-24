@@ -11,7 +11,15 @@ import {
   Wrench,
   Table2,
   FileEdit,
-  Feather
+  Feather,
+  ImageDown,
+  Video,
+  ScrollText,
+  StickyNote,
+  Eraser,
+  Pipette,
+  Captions,
+  Languages
 } from 'lucide-react'
 
 export interface Tool {
@@ -163,6 +171,142 @@ export const tools: Tool[] = [
       'IndexedDB storage · zero servers'
     ],
     techHighlight: 'Whisper + bge + Qwen2.5 + WebGPU'
+  },
+  {
+    id: 'heicpix',
+    name: 'HEICPix',
+    tagline: 'HEIC to JPG/PNG/WebP/AVIF',
+    description: 'Convert iPhone HEIC photos to JPG, PNG, WebP or AVIF in your browser. Unlimited batch, nothing uploads.',
+    icon: ImageDown,
+    url: 'https://heicpix.com',
+    color: '#f59e0b',
+    gradient: 'from-amber-500 to-orange-600',
+    features: [
+      'Batch HEIC conversion',
+      'JPG, PNG, WebP, AVIF output',
+      'No signup, no upload',
+      'Works on any browser'
+    ],
+    techHighlight: 'libheif WASM'
+  },
+  {
+    id: 'compressvideofile',
+    name: 'Compress Video File',
+    tagline: 'Compress and Trim Video',
+    description: 'Shrink MP4, MOV, WebM, MP3 and M4A files for WhatsApp, email or Discord, or trim them — in your browser, no upload.',
+    icon: Video,
+    url: 'https://compressvideofile.com',
+    color: '#8b5cf6',
+    gradient: 'from-violet-500 to-purple-600',
+    features: [
+      'Target a file size',
+      'Trim start/end',
+      'Video and audio',
+      'No watermark'
+    ],
+    techHighlight: 'FFmpeg.wasm'
+  },
+  {
+    id: 'floatingteleprompter',
+    name: 'Floating Teleprompter',
+    tagline: 'Teleprompter over any app',
+    description: 'A teleprompter that floats over OBS, Zoom, Loom and any recording app. Paste your script, hit play, look at the camera.',
+    icon: ScrollText,
+    url: 'https://floatingteleprompter.com',
+    color: '#06b6d4',
+    gradient: 'from-cyan-500 to-sky-600',
+    features: [
+      'Floats over other apps',
+      'Adjustable speed',
+      'No install',
+      'Script stays local'
+    ],
+    techHighlight: 'Document Picture-in-Picture'
+  },
+  {
+    id: 'alwaysontopnotes',
+    name: 'Always On Top Notes',
+    tagline: 'Floating sticky notes',
+    description: 'Sticky notes that float over every app via Document Picture-in-Picture. Notes stay on your device.',
+    icon: StickyNote,
+    url: 'https://alwaysontopnotes.com',
+    color: '#eab308',
+    gradient: 'from-yellow-500 to-amber-600',
+    features: [
+      'Always-on-top window',
+      'Local storage only',
+      'No install',
+      'No signup'
+    ],
+    techHighlight: 'Document Picture-in-Picture'
+  },
+  {
+    id: 'magicphotoeraser',
+    name: 'MagicPhotoEraser',
+    tagline: 'Erase objects from photos',
+    description: 'Remove unwanted objects, people, text or watermarks from photos with AI that runs in your browser.',
+    icon: Eraser,
+    url: 'https://magicphotoeraser.com',
+    color: '#ec4899',
+    gradient: 'from-pink-500 to-fuchsia-600',
+    features: [
+      'Brush to erase',
+      'On-device AI inpainting',
+      'No watermark',
+      'No upload'
+    ],
+    techHighlight: 'ONNX Runtime Web'
+  },
+  {
+    id: 'screencolorpicker',
+    name: 'Screen Color Picker',
+    tagline: 'Pick colors from your screen',
+    description: 'Pick any color from anywhere on your screen — other apps, videos, PDFs, even another monitor. Built on the EyeDropper API.',
+    icon: Pipette,
+    url: 'https://screencolorpicker.com',
+    color: '#14b8a6',
+    gradient: 'from-teal-500 to-emerald-600',
+    features: [
+      'Picks outside the browser',
+      'HEX, RGB, HSL',
+      'Color history',
+      'Zero install'
+    ],
+    techHighlight: 'EyeDropper API'
+  },
+  {
+    id: 'livecaptionit',
+    name: 'LiveCaptionIt',
+    tagline: 'Live captions for any tab',
+    description: 'Live captions for any audio your browser can hear, in a floating picture-in-picture window. Whisper runs locally via WebGPU.',
+    icon: Captions,
+    url: 'https://livecaptionit.com',
+    color: '#6366f1',
+    gradient: 'from-indigo-500 to-blue-600',
+    features: [
+      'Captions any tab audio',
+      'Floating PiP window',
+      'Whisper on-device',
+      'Audio never uploads'
+    ],
+    techHighlight: 'Whisper + WebGPU'
+  },
+  {
+    id: 'subtitletranslatorfree',
+    name: 'SubtitleTranslatorFree',
+    tagline: 'Translate SRT/VTT subtitles',
+    description: 'Translate SRT and VTT subtitle files into 20+ languages on your device — no upload, no signup.',
+    icon: Languages,
+    url: 'https://subtitletranslatorfree.com',
+    color: '#0ea5e9',
+    gradient: 'from-sky-500 to-blue-600',
+    features: [
+      'SRT and VTT',
+      '20+ languages',
+      'Keeps timings',
+      'On-device translation'
+    ],
+    techHighlight: 'On-device translation models'
   }
 ]
 

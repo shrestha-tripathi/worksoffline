@@ -13,7 +13,10 @@ export function TldrSection() {
           on-device AI, so nothing is uploaded. The main limit: speed and maximum file size depend on
           your device&apos;s memory and browser.
         </p>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">Last updated {lastUpdatedLabel()}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+          AI agent ready (WebMCP): browsers that support navigator.modelContext can call find_tool and list_tools on this page.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Last updated {lastUpdatedLabel()}</p>
       </div>
     </section>
   )

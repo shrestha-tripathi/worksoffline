@@ -2,11 +2,13 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
+import { site, organizationJsonLd } from '@/config/site'
 import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: 'WorksOffline.in - Privacy-First Tools That Work Offline',
   description: 'Free, privacy-first utility tools powered by WebAssembly. Process PDFs, images, and more — everything happens locally on your device. No servers, no uploads, complete data privacy.',
   manifest: '/manifest.json',
@@ -42,6 +44,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="apple-touch-icon" href="/icons/icon.svg" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

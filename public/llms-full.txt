@@ -1,0 +1,49 @@
+# WorksOffline.in
+
+> WorksOffline.in is a free hub of privacy-first browser tools (PDF, photos, video, subtitles, notes, developer utilities) that process files locally on your device with WebAssembly and on-device AI — no uploads.
+
+## What it is
+A portfolio of independent single-purpose web apps. Each tool runs client-side in the browser; files are not sent to a server for processing. Most work offline after the first load.
+
+## Privacy
+Processing happens in your browser. The hub site uses Google Analytics for page-view statistics only; your files are never part of that.
+
+## Limits
+Speed and maximum file size depend on your device's memory and browser. Some AI tools (captions, notes chat) need WebGPU and download a model on first use. Some tools rely on newer browser APIs (EyeDropper, Document Picture-in-Picture) that are Chromium-only at the time of writing.
+
+## Pages
+- [WorksOffline.in home](https://worksoffline.in/): Directory of all tools.
+
+## Tools
+- [PresetPhoto](https://presetphoto.worksoffline.in): Exam Photo Processor — Process photos and signatures for government exam applications. Crop, resize, and compress to exact specifications required by exam portals.
+- [PDF Unlocker](https://pdfunlocker.worksoffline.in): Remove PDF Passwords — Remove passwords from protected PDF files instantly. Unlock encrypted PDFs without uploading to any server.
+- [PDF Redactor](https://pdfredactor.worksoffline.in): AI-Powered PII Redaction — Automatically detect and redact Personally Identifiable Information (PII) from PDF documents using AI that runs entirely in your browser.
+- [VyapaarPost](https://vyapaarpost.worksoffline.in): WhatsApp Marketing Creator — Create beautiful marketing posts in Indian languages for WhatsApp. Professional templates for offers, festivals, and greetings.
+- [DevToy](https://devtoy.worksoffline.in): Developer Utilities Suite — Swiss-Army-Knife developer utilities with smart paste detection. JSON formatter, JWT decoder, regex tester, base64 encoder, and Unix time converter.
+- [BlitzTable](https://blitztable.worksoffline.in): Offline Data Analytics — Lightning-fast SQL queries, pivot tables, and charts for CSV/JSON data. Analyze Airtable exports and 100k+ rows instantly in your browser.
+- [PDFHub](https://pdfhub.worksoffline.in): Complete PDF Toolkit — All-in-one offline PDF editor. Merge, split, OCR, redact, sign, password protect, and convert PDFs - all processing happens locally in your browser.
+- [Pensive](https://shrestha-tripathi.github.io/pensive/): Local-first note-taking with on-device AI — Take notes, transcribe voice with Whisper, and chat with your own knowledge base via on-device RAG. Nested pages, backlinks, and a quick switcher — all in your browser.
+- [HEICPix](https://heicpix.com): HEIC to JPG/PNG/WebP/AVIF — Convert iPhone HEIC photos to JPG, PNG, WebP or AVIF in your browser. Unlimited batch, nothing uploads.
+- [Compress Video File](https://compressvideofile.com): Compress and Trim Video — Shrink MP4, MOV, WebM, MP3 and M4A files for WhatsApp, email or Discord, or trim them — in your browser, no upload.
+- [Floating Teleprompter](https://floatingteleprompter.com): Teleprompter over any app — A teleprompter that floats over OBS, Zoom, Loom and any recording app. Paste your script, hit play, look at the camera.
+- [Always On Top Notes](https://alwaysontopnotes.com): Floating sticky notes — Sticky notes that float over every app via Document Picture-in-Picture. Notes stay on your device.
+- [MagicPhotoEraser](https://magicphotoeraser.com): Erase objects from photos — Remove unwanted objects, people, text or watermarks from photos with AI that runs in your browser.
+- [Screen Color Picker](https://screencolorpicker.com): Pick colors from your screen — Pick any color from anywhere on your screen — other apps, videos, PDFs, even another monitor. Built on the EyeDropper API.
+- [LiveCaptionIt](https://livecaptionit.com): Live captions for any tab — Live captions for any audio your browser can hear, in a floating picture-in-picture window. Whisper runs locally via WebGPU.
+- [SubtitleTranslatorFree](https://subtitletranslatorfree.com): Translate SRT/VTT subtitles — Translate SRT and VTT subtitle files into 20+ languages on your device — no upload, no signup.
+
+## FAQ
+Q: Are the tools free?
+A: Yes. All tools are free to use with no signup.
+
+Q: Do my files get uploaded?
+A: No. Files are processed in your browser on your own device. Nothing is uploaded for processing.
+
+Q: Do the tools work offline?
+A: Most do after the first visit, because the app and its WebAssembly/AI models are cached by the browser.
+
+Q: What are the limits?
+A: Large files depend on your device's RAM. AI features may need WebGPU and a one-time model download. Some tools need a Chromium-based browser for APIs like EyeDropper or Document Picture-in-Picture.
+
+Q: Can AI agents use the site?
+A: Yes. worksoffline.in exposes WebMCP tools (find_tool, list_tools) when the browser provides navigator.modelContext.
